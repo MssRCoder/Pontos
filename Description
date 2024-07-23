@@ -1,0 +1,43 @@
+Descrição do Sistema
+Este sistema permite criar, listar e ler "pontos" com valores associados. Os pontos são armazenados tanto em arquivos quanto em um dicionário Python para fácil acesso e manipulação. O sistema utiliza um menu interativo para a navegação entre as opções disponíveis.
+
+Funcionalidades:
+Gerar Valor Aleatório:
+
+Função gerar_valor_aleatorio(tamanho): Gera uma string aleatória de um tamanho especificado, composta por letras maiúsculas, minúsculas e dígitos.
+Criar Ponto (CP):
+
+Função CP(): Cria um novo ponto com um identificador aleatório de 8 caracteres.
+Gera um nome de ponto aleatório.
+Cria um arquivo com o nome do ponto e escreve "0x000" no arquivo.
+Adiciona o ponto ao dicionário diccio com uma lista inicial de valores ["0x001", "0x002", "0x003"].
+Exibe uma mensagem indicando que o ponto foi criado.
+Listar Pontos (LPs):
+
+Função LPs(): Lista todos os pontos e seus valores associados armazenados no dicionário diccio.
+Ler Ponto (LP):
+
+Função LP(): Lê o conteúdo de um arquivo de ponto específico e mostra os valores associados a esse ponto no dicionário diccio.
+Solicita ao usuário o nome do ponto.
+Abre o arquivo correspondente e exibe seu conteúdo.
+Exibe os valores associados ao ponto no dicionário diccio.
+Menu Interativo:
+
+Função menu(): Exibe um menu interativo com três opções:
+Criar um ponto (opção 1).
+Listar pontos (opção 2).
+Ler um ponto (opção 3).
+Solicita ao usuário a seleção de uma opção e chama a função correspondente.
+Após a execução da opção selecionada, exibe o menu novamente para permitir novas operações.
+Fluxo de Execução:
+Ao iniciar o sistema, a função menu() é chamada.
+O usuário é apresentado com um menu de opções.
+Dependendo da opção escolhida:
+A opção 1 chama a função CP() para criar um novo ponto.
+A opção 2 chama a função LPs() para listar todos os pontos.
+A opção 3 chama a função LP() para ler o conteúdo de um ponto específico.
+Após a execução da opção, o menu é exibido novamente para permitir que o usuário continue interagindo com o sistema.
+Observações:
+O sistema usa o módulo random para gerar identificadores de pontos aleatórios.
+O dicionário diccio armazena os pontos e seus valores associados em memória.
+Os arquivos criados têm os nomes dos pontos e contêm valores específicos para cada ponto.
